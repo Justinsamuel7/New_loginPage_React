@@ -3,6 +3,8 @@ import './style.css';
 
 export default function HomePage() {
 
+  const [page, setPage]=useState()
+
 
   return (
     <div>

@@ -4,7 +4,6 @@ import HomePage from "./HomePage"
 
 export default function CheckLogin() {
 
-  const [page, setPage]=useState()
   const [isLogin, setIsLogin]=useState(false)
   const [showpass, setShowpass]=useState(false)
   const [usrInfo, setUsrInfo]=useState(
