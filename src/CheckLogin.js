@@ -68,6 +68,7 @@ export default function CheckLogin() {
 
   const loginform = () => {
     return (
+      <div id="formContainer">
       <form onSubmit={check} id="form">
         <h1>Enter User Credentials</h1>
         <input
@@ -90,8 +91,9 @@ export default function CheckLogin() {
         <p>{showError}</p>
         <button type="submit">Submit</button>
       </form>
+      </div>
     );
   };
 
-  return <div id="formContainer">{isLogin ? <HomePage /> : loginform()}</div>;
+  return <>{isLogin ? <HomePage /> : loginform()}</>;
 }

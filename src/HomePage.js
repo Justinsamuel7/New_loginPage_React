@@ -35,7 +35,7 @@ export default function HomePage() {
         <button onClick={() => changePage(2)}>Current Time</button>
         <button onClick={() => changePage(3)}>To-Do List</button>
         <button onClick={() => changePage(4)}>Api Call</button>
-        <button onClick={() => changePage(5)}>Api Call</button>
+        <button onClick={() => changePage(5)}>Log out</button>
 
       </div>
       <div id="subComponent">{subComponent()}</div>
