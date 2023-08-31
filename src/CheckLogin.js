@@ -3,6 +3,13 @@ import './style.css';
 import HomePage from './HomePage';
 
 export default function CheckLogin() {
+  useEffect(()=>{
+
+    if(localStorage.getItem('login'))
+    {
+      setIsLogin(true)
+    }
+  },[])
   const [isLogin, setIsLogin] = useState(false);
   const [showpass, setShowpass] = useState(false);
   const [usrInfo, setUsrInfo] = useState({
