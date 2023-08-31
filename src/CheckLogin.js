@@ -68,7 +68,8 @@ export default function CheckLogin() {
 
   const loginform = () => {
     return (
-      <form onSubmit={check}>
+      <form onSubmit={check} id="form">
+        <h1>Enter User Credentials</h1>
         <input
           placeholder="User Name"
           type="text"
@@ -76,6 +77,7 @@ export default function CheckLogin() {
           name="username"
           onChange={collectInputs}
         />
+        <br/>
         <input
           placeholder="Password"
           type={showpass ? 'text' : 'password'}
@@ -91,5 +93,5 @@ export default function CheckLogin() {
     );
   };
 
-  return <>{isLogin ? <HomePage /> : loginform()}</>;
+  return <div id="formContainer">{isLogin ? <HomePage /> : loginform()}</div>;
 }
