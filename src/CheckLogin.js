@@ -48,12 +48,14 @@ export default function CheckLogin() {
 
   const check = (e) => {
     e.preventDefault();
+    if(usrInfo.username.length > 0)
+    {
     let isPresent = ExistingUsers.findIndex((obj) => {
       return obj['username'] == usrInfo.username;
     });
 
     if (isPresent == -1) {
-      setShowError('Invalid User, Or user not exist');
+      setShowError(`Invalid User, Or user doesn't exist`);
     } else if (
       ExistingUsers[isPresent].username == usrInfo.username &&
       ExistingUsers[isPresent].password == usrInfo.password
@@ -64,7 +66,12 @@ export default function CheckLogin() {
     } else {
       setShowError('Invalid Password');
     }
+  }
+  else{
+    setShowError('Enter Details!');
+  }
   };
+
 
   const switchHideShow = () => {
     setShowpass(!showpass);
