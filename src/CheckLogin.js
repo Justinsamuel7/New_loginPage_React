@@ -35,6 +35,10 @@ export default function CheckLogin() {
       username: 'Jude',
       password: 'Jude@5',
     },
+    {
+      username:"justin",
+      password:"Justin8"
+    }
   ];
 
   const collectInputs = (e) => {
