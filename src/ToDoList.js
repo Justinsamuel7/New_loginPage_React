@@ -30,7 +30,7 @@ export default function ToDoList() {
 
   return (
     <>
-    <h1>To Do List</h1>
+    <h1>To-Do List</h1>
     <input type="text" placeholder="Task Name" onChange={taskNameSetter} value={taskName}/> <button onClick={addToTaskArray}>Add</button>
     <div>
       <h3>Tasks</h3>
