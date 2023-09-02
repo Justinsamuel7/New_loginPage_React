@@ -48,7 +48,7 @@ export default function CheckLogin() {
 
   const check = (e) => {
     e.preventDefault();
-    if(usrInfo.username.length > 0)
+    if(usrInfo.username.length > 0 && usrInfo.password.length > 0)
     {
     let isPresent = ExistingUsers.findIndex((obj) => {
       return obj['username'] == usrInfo.username;
