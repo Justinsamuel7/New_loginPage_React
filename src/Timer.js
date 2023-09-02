@@ -5,18 +5,16 @@ export default function Timer() {
   const [sec, setSec] = useState(0);
   const [showTimer, setShowTimer] = useState(false);
 
-  useEffect(() => {
-    setInterval(() => {
-      setSec((prev) => (prev > 0 ? prev - 1 : prev));
-    }, 1000);
-  });
-
   const getSecond = (e) => {
     setSec(Number(e.target.value));
   };
 
   const startCountDown = () => {
     setShowTimer(true);
+    setInterval(() => {
+      setSec((prev) => (prev > 0 ? prev - 1 : prev));
+    }, 1000);
+
   };
 
   return (
