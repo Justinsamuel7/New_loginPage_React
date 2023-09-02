@@ -49,8 +49,24 @@
 }
 
 .individualTask{
-  background-color: aqua;
+  color: whitesmoke;
+  font-size: large;
+  background-color: rgb(175, 34, 133);
   border: 2px solid navy;
+  border-radius: 1rem 0 1rem 0;
+  height: 2rem;
+  width: 20rem;
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
+}
+.individualTaskDone{
+  color: black;
+  font-size: large;
+  background-color: rgb(32, 212, 0);
+  border: 2px solid rgb(82, 255, 82);
   border-radius: 1rem 0 1rem 0;
   height: 2rem;
   width: 20rem;
